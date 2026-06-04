@@ -10,9 +10,33 @@
 		EA4B97662FBF1C2200142561 /* Taproom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Taproom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		EA333E3E2FCA078000EA711A /* Exceptions for "Taproom" folder in "Taproom" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Services/BrewCatalogSyncService.swift,
+			);
+			target = EA4B97652FBF1C2200142561 /* Taproom */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		EA333E3F2FCA078000EA711A /* Exceptions for "Taproom" folder in "Copy Bundle Resources" phase from "Taproom" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = EA4B97642FBF1C2200142561 /* Resources */;
+			membershipExceptions = (
+				Services/BrewCatalogSyncService.swift,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		EA4B97682FBF1C2200142561 /* Taproom */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				EA333E3E2FCA078000EA711A /* Exceptions for "Taproom" folder in "Taproom" target */,
+				EA333E3F2FCA078000EA711A /* Exceptions for "Taproom" folder in "Copy Bundle Resources" phase from "Taproom" target */,
+			);
 			path = Taproom;
 			sourceTree = "<group>";
 		};
@@ -94,6 +118,8 @@
 			);
 			mainGroup = EA4B975D2FBF1C2200142561;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = EA4B97672FBF1C2200142561 /* Products */;
 			projectDirPath = "";

@@ -6,12 +6,17 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct TaproomApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
         }
+		.modelContainer(for: [
+			BrewPackage.self,
+			BrewCatalogMetadata.self
+		])
     }
 }
