@@ -43,7 +43,5 @@ struct DiscoverView: View {
 					.navigationTitle(formula.name)
 			}
 		}
-		
-		
 	}
 }
