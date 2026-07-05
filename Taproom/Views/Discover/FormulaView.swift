@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftUIKit
 
 /// this view will contain the formula info. like description and stuffs
 struct FormulaView: View {
@@ -67,11 +68,70 @@ struct FormulaView: View {
 			
 			// here the stats?
 			
-			// another divider
+//			Divider()
+//				.padding(.vertical  , 20)
+//				.padding(.horizontal, 40)
 			
 			// here the downloads?
 			
+			if let analytics = formula.analytics {
+				HStack {
+					Spacer()
+
+					StackedText(
+						"\(analytics.downloads30d)",
+						desc: "30 days"
+					)
+					
+					Spacer()
+					Divider()
+					Spacer()
+					
+					StackedText(
+						"\(analytics.downloads90d)",
+						desc: "90 days"
+					)
+					
+					Spacer()
+					Divider()
+					Spacer()
+					
+					StackedText(
+						"\(analytics.downloads365d)",
+						desc: "365 days"
+					)
+					
+					Spacer()
+				}
+				.frame(maxWidth: .infinity)
+				.padding(20)
+				.surface(.primary, in: .roundedRect(cornerRadius: 20))
+				.padding(20)
+
+			}
+			
 			Spacer()
+		}
+	}
+}
+
+struct StackedText: View {
+	var title: String
+	var desc : String
+	
+	init(_ title: String, desc: String) {
+		self.title = title
+		self.desc  = desc
+	}
+	
+	var body: some View {
+		VStack {
+			Text(title)
+				.font(.title)
+				.fontWeight(.bold)
+			Text(desc)
+				.font(.caption)
+				.foregroundStyle(.secondary)
 		}
 	}
 }

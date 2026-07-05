@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		EACE424F2FE97EA600162DF9 /* SwiftUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = EACE424E2FE97EA600162DF9 /* SwiftUIKit */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		EA4B97662FBF1C2200142561 /* Taproom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Taproom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -40,6 +44,11 @@
 			path = Taproom;
 			sourceTree = "<group>";
 		};
+		EAE618D02FFA91DF00343F36 /* References */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = References;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EACE424F2FE97EA600162DF9 /* SwiftUIKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +66,7 @@
 		EA4B975D2FBF1C2200142561 = {
 			isa = PBXGroup;
 			children = (
+				EAE618D02FFA91DF00343F36 /* References */,
 				EA4B97682FBF1C2200142561 /* Taproom */,
 				EA4B97672FBF1C2200142561 /* Products */,
 			);
@@ -86,9 +97,11 @@
 			);
 			fileSystemSynchronizedGroups = (
 				EA4B97682FBF1C2200142561 /* Taproom */,
+				EAE618D02FFA91DF00343F36 /* References */,
 			);
 			name = Taproom;
 			packageProductDependencies = (
+				EACE424E2FE97EA600162DF9 /* SwiftUIKit */,
 			);
 			productName = Taproom;
 			productReference = EA4B97662FBF1C2200142561 /* Taproom.app */;
@@ -119,6 +132,7 @@
 			mainGroup = EA4B975D2FBF1C2200142561;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
+				EACE424D2FE97EA600162DF9 /* XCRemoteSwiftPackageReference "SwiftUIKit" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = EA4B97672FBF1C2200142561 /* Products */;
@@ -357,6 +371,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EACE424D2FE97EA600162DF9 /* XCRemoteSwiftPackageReference "SwiftUIKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Hylo-dev/SwiftUIKit";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EACE424E2FE97EA600162DF9 /* SwiftUIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EACE424D2FE97EA600162DF9 /* XCRemoteSwiftPackageReference "SwiftUIKit" */;
+			productName = SwiftUIKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EA4B975E2FBF1C2200142561 /* Project object */;
 }

@@ -1,0 +1,15 @@
+{
+  "originHash" : "39e25028884c545c3b173807e338ebf162b0895ed0946fe539bd58bfb81c756a",
+  "pins" : [
+    {
+      "identity" : "swiftuikit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Hylo-dev/SwiftUIKit",
+      "state" : {
+        "branch" : "main",
+        "revision" : "a95196e0b055504124afd9f71a01a3ff80558f9f"
+      }
+    }
+  ],
+  "version" : 3
+}
